@@ -1,9 +1,7 @@
 /** Import Bootstrap functions */
 @import "~bootstrap/scss/functions";
 
-$theme-colors: (
-  primary: #525ddc
-);
+$theme-colors: (primary: #525ddc, "rouge-fif":#ff2a87, "bleu-fif":#3a2a87, "vert-fif":#57b7b8);
 
 /** Bootstrap navbar fix (https://git.io/fADqW) */
 $navbar-dark-toggler-icon-bg: none;

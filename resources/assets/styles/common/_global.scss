@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'vtf_misterpixelregular';
+  src: url('../fonts/mister_pixel_regular-webfont.woff2') format('woff2'),
+    url('../fonts/mister_pixel_regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'vtf_misterpixeltools';
+  src: url('../fonts/mister_pixel_tools-webfont.woff2') format('woff2'),
+    url('../fonts/mister_pixel_tools-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.brand {
+  font-family: 'vtf_misterpixelregular';
+}
