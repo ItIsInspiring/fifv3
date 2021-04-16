@@ -1,3 +1,38 @@
 .footer-fif {
   background-color: theme-color("bleu-fif");
+  padding: 3.5rem;
+  color: white;
+
+  .brand {
+    font-size: 3rem;
+  }
+}
+
+#menu-social-links {
+  font-size: 3rem;
+
+  a {
+    color: white;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+}
+
+#menu-footer-menu {
+
+  font-family: 'andika_new_basicregular',
+    Calibri,
+    'Trebuchet MS',
+    sans-serif;
+  font-size: 0.75rem;
+
+  a {
+    color: theme-color("rouge-fif");
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+  }
+
+  span {
+    color: white;
+  }
 }

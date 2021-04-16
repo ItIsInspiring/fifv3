@@ -8,7 +8,7 @@
       "./scripts/customizer.js"
     ]
   },
-  "publicPath": "/wp-content/themes/fifV3",
+  "publicPath": "/wp-content/themes/fifV3/",
   "devUrl": "http://flash-info-fouffes.test",
   "proxyUrl": "http://localhost:3000",
   "cacheBusting": "[name]_[hash:8]",
