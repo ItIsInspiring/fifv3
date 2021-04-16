@@ -51,8 +51,8 @@ label {
     height: 4em;
     margin: 0;
     padding: 0.5rem;
-    background-color: theme-color('rouge-fif');
-    border: 15px solid theme-color('rouge-fif');
+    background-color: darken(theme-color('rouge-fif'), 25%);
+    border: 15px solid darken(theme-color('rouge-fif'), 25%);
     transition: opacity .5s $timing-function;
 
     &::before,
@@ -107,7 +107,7 @@ nav {
   transform: translateX(-100%);
   will-change: transform;
   transition: transform .5s $timing-function;
-  background-color: theme-color("rouge-fif");
+  background-color: darken(theme-color('rouge-fif'), 25%);
   overflow: auto;
   padding: 1rem;
 
@@ -222,8 +222,7 @@ body {
   margin-bottom: 2rem;
   font-size: 2rem;
   text-transform: uppercase;
-
-  img {}
+  width: 100%
 }
 
 #menu-main-menu {
@@ -244,7 +243,7 @@ body {
   .menu-item {
     margin-top: 0rem;
     font-family: 'vtf_misterpixelregular', 'Trebuchet MS', sans-serif;
-    font-size: 1.25rem;
+    font-size: 1.75rem;
     text-transform: uppercase;
 
     span {
@@ -275,7 +274,23 @@ body {
       padding: 1rem 0;
 
     }
+  }
+}
 
+#menu .search-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  height: 10rem;
+  margin: 3rem auto;
 
+  .search-submit {
+    margin-top: -1.5rem;
+    position: relative;
+  }
+
+  input {
+    opacity: 1 !important;
   }
 }
