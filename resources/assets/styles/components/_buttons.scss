@@ -1,0 +1,19 @@
+@mixin btn-fif ($bg-color, $color) {
+  background-color: transparent;
+  background-image: radial-gradient($bg-color .5px, transparent .5px), radial-gradient($bg-color .5px, transparent .5px);
+  background-size: calc(20 * .25px) calc(20 * .25px);
+  background-position: 0 0, calc(10 * .25px) calc(10 * .25px);
+  transform: rotate(-2.5deg);
+  padding: 0.5rem 0.75rem 0.5rem 0.25rem;
+  display: inline-block;
+
+  a {
+    background-color: $bg-color;
+    color: $color;
+    transform: rotate(2.5deg);
+    padding: 0.5rem 1rem;
+    border: 0;
+    display: inline-block;
+  }
+
+}

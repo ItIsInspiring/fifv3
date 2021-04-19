@@ -51,8 +51,8 @@ label {
     height: 4em;
     margin: 0;
     padding: 0.5rem;
-    background-color: darken(theme-color('rouge-fif'), 25%);
-    border: 15px solid darken(theme-color('rouge-fif'), 25%);
+    background-color: darken(theme-color('rouge-fif'), 15%);
+    border: 15px solid darken(theme-color('rouge-fif'), 15%);
     transition: opacity .5s $timing-function;
 
     &::before,

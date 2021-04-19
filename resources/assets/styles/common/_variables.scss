@@ -3,62 +3,67 @@
 
 $theme-colors: (primary: #525ddc, "rouge-fif":#ff2a87, "bleu-fif":#3a2a87, "vert-fif":#57b7b8);
 
+@font-face {
+  font-family: 'vtf_misterpixelregular';
+  src: url('../fonts/mister_pixel_regular-webfont.woff2') format('woff2'),
+    url('../fonts/mister_pixel_regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'vtf_misterpixeltools';
+  src: url('../fonts/mister_pixel_tools-webfont.woff2') format('woff2'),
+    url('../fonts/mister_pixel_tools-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'andika_new_basicbold';
+  src: url('../fonts/andikanewbasic-b-webfont.woff2') format('woff2'),
+    url('../fonts/andikanewbasic-b-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'andika_new_basicbold_italic';
+  src: url('../fonts/andikanewbasic-bi-webfont.woff2') format('woff2'),
+    url('../fonts/andikanewbasic-bi-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'andika_new_basicregular';
+  src: url('../fonts/andikanewbasic-r-webfont.woff2') format('woff2'),
+    url('../fonts/andikanewbasic-r-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+// stylelint-disable value-keyword-case
+$font-family-sans-serif: 'andika_new_basicregular' !important;
+$font-family-base: $font-family-sans-serif;
+$headings-font-family: 'vtf_misterpixelregular' !default;
+
+
 /** Bootstrap navbar fix (https://git.io/fADqW) */
 $navbar-dark-toggler-icon-bg: none;
 $navbar-light-toggler-icon-bg: none;
 
-/** */
-$root: (fontSize: 16px,
-  lineHeight: 24px);
-$scale0: (fontSize: 1rem,
-  line: 1.5rem,
-  autoLineCount: 1,
-  autoLineHeight: 1.5rem);
-$scale1: (fontSize: 1.625rem,
-  line: 1.5rem,
-  autoLineCount: 2,
-  autoLineHeight: 3rem);
-$scale2: (fontSize: 2.625rem,
-  line: 1.5rem,
-  autoLineCount: 2,
-  autoLineHeight: 3rem);
-$scale3: (fontSize: 4.25rem,
-  line: 1.5rem,
-  autoLineCount: 3,
-  autoLineHeight: 4.5rem);
-$scale4: (fontSize: 6.875rem,
-  line: 1.5rem,
-  autoLineCount: 5,
-  autoLineHeight: 7.5rem);
-$scale5: (fontSize: 11.0625rem,
-  line: 1.5rem,
-  autoLineCount: 8,
-  autoLineHeight: 12rem);
-$scale6: (fontSize: 17.9375rem,
-  line: 1.5rem,
-  autoLineCount: 12,
-  autoLineHeight: 18rem);
-$scale7: (fontSize: 29rem,
-  line: 1.5rem,
-  autoLineCount: 20,
-  autoLineHeight: 30rem);
-$scale8: (fontSize: 47rem,
-  line: 1.5rem,
-  autoLineCount: 32,
-  autoLineHeight: 48rem);
-$scale9: (fontSize: 76rem,
-  line: 1.5rem,
-  autoLineCount: 51,
-  autoLineHeight: 76.5rem);
-$scale10: (fontSize: 122.9375rem,
-  line: 1.5rem,
-  autoLineCount: 82,
-  autoLineHeight: 123rem);
-$scale11: (fontSize: 198.9375rem,
-  line: 1.5rem,
-  autoLineCount: 133,
-  autoLineHeight: 199.5rem);
-$scale12: (fontSize: 321.9375rem,
-  line: 1.5rem,
-  autoLineCount: 215,
-  autoLineHeight: 322.5rem);
+
+// Links
+//
+// Style anchor elements.
+
+$link-color: theme-color("rouge-fif") !default;
+$link-decoration: none !default;
+$link-hover-color: darken($link-color, 25%) !default;
+$link-hover-decoration: underline !default;
+// Darken percentage for links with `.text-*` class (e.g. `.text-success`)
+$emphasized-link-hover-darken-percentage: 15% !default;

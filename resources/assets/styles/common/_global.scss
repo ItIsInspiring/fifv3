@@ -1,46 +1,19 @@
-@font-face {
-  font-family: 'vtf_misterpixelregular';
-  src: url('../fonts/mister_pixel_regular-webfont.woff2') format('woff2'),
-    url('../fonts/mister_pixel_regular-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
+body {
+  font-family: $font-family-sans-serif;
+  color: theme-color("bleu-fif") !important;
 
-@font-face {
-  font-family: 'vtf_misterpixeltools';
-  src: url('../fonts/mister_pixel_tools-webfont.woff2') format('woff2'),
-    url('../fonts/mister_pixel_tools-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'andika_new_basicbold';
-  src: url('../fonts/andikanewbasic-b-webfont.woff2') format('woff2'),
-    url('../fonts/andikanewbasic-b-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
-}
-
-@font-face {
-  font-family: 'andika_new_basicbold_italic';
-  src: url('../fonts/andikanewbasic-bi-webfont.woff2') format('woff2'),
-    url('../fonts/andikanewbasic-bi-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
-}
-
-@font-face {
-  font-family: 'andika_new_basicregular';
-  src: url('../fonts/andikanewbasic-r-webfont.woff2') format('woff2'),
-    url('../fonts/andikanewbasic-r-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
 
 }
 
 .brand {
   font-family: 'vtf_misterpixelregular';
+}
+
+html {}
+
+main {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+
 }

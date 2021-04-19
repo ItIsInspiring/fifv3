@@ -1,18 +1,58 @@
 .cta {
-  max-width: 60rem;
-  margin: 3rem auto;
-  padding: 4rem;
+  margin: 4rem auto;
+
+  @include media-breakpoint-up(md) {
+    max-width: 40rem;
+
+    &:nth-child(even) {
+      padding-left: 3rem;
+    }
+
+    &:nth-child(odd) {
+      padding-right: 3rem;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    max-width: 50rem;
+  }
+
+}
+
+@mixin texture-pointilles($color) {
+  background-color: transparent;
+  background-image: radial-gradient(black .5px, transparent .5px), radial-gradient(black .5px, transparent .5px);
+  background-size: calc(20 * .25px) calc(20 * .25px);
+  background-position: 0 0, calc(10 * .25px) calc(10 * .25px);
+  transform: rotate(-2.5deg);
+  display: block;
+  color: white;
+
+  .bloc-content {
+    background-color: theme-color($color);
+    transform: rotate(2.5deg);
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+
+    @include media-breakpoint-up(md) {
+      padding: 4rem;
+    }
+  }
+
+  .btn-fif {
+    @include btn-fif(white, theme-color($color));
+  }
+
 }
 
 .ca-gratte {
-  background-color: theme-color("rouge-fif");
+  @include texture-pointilles("rouge-fif");
 }
 
-
 .chat-perche {
-  background-color: theme-color("bleu-fif");
+  @include texture-pointilles("bleu-fif");
 }
 
 .soin-minou {
-  background-color: theme-color("vert-fif");
+  @include texture-pointilles("vert-fif");
 }

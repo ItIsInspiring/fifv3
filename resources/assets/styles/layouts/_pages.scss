@@ -1,4 +1,16 @@
+.page-template,
 .home {
   background: white url('../images/main-bg.gif');
   background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.intro {
+  text-align: center;
+  color: black;
+  margin: 8rem auto;
+
+  H1 {
+    color: theme-color("rouge-fif");
+  }
 }
