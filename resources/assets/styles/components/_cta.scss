@@ -19,14 +19,10 @@
 
 }
 
+
+
 @mixin texture-pointilles($color) {
-  background-color: transparent;
-  background-image: radial-gradient(black .5px, transparent .5px), radial-gradient(black .5px, transparent .5px);
-  background-size: calc(20 * .25px) calc(20 * .25px);
-  background-position: 0 0, calc(10 * .25px) calc(10 * .25px);
-  transform: rotate(-2.5deg);
-  display: block;
-  color: white;
+  @include texture-pointilles-simple;
 
   .bloc-content {
     background-color: theme-color($color);

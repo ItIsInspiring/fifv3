@@ -2,6 +2,7 @@
 
 @section('content')
   @include('partials.page-header')
+  <div class="wrapper-main-content">
 
   @if (!have_posts())
     <div class="alert alert-warning">
@@ -9,4 +10,5 @@
     </div>
     {!! get_search_form(false) !!}
   @endif
+  </div>
 @endsection

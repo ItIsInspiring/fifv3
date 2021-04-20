@@ -1,0 +1,20 @@
+#myTab {
+  padding-bottom: 2rem;
+
+  .nav-link {
+    display: block;
+
+    &:nth-child(odd) {
+      background-color: $gray-200;
+    }
+
+    &:nth-child(even) {
+      background-color: $gray-400;
+    }
+
+    &.active {
+      background-color: theme-color("rouge-fif");
+      color: white;
+    }
+  }
+}

@@ -1,3 +1,3 @@
 <div class="page-header">
-  <h1>{!! App::title() !!}</h1>
+  <h1 class="display-4">{!! App::title() !!}</h1>
 </div>

@@ -1,0 +1,22 @@
+.mozaic-bloc {
+  background-color: $secondary;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  height: 15rem;
+  font-size: 2rem;
+  outline: 0.1rem solid #ccc;
+  justify-content: center;
+  border: 1px solid #ccc;
+  transition: border 0.25s;
+
+  span {
+    font-size: 2rem;
+    margin: 0 auto;
+  }
+
+  &:hover {
+    border: 10px solid #ccc;
+    text-decoration: none;
+  }
+}

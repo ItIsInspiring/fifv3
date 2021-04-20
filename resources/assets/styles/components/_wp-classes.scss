@@ -54,3 +54,8 @@
   @extend .sr-only;
   @extend .sr-only-focusable;
 }
+
+/** image */
+.wp-block-image {
+  @include texture-pointilles-simple;
+}

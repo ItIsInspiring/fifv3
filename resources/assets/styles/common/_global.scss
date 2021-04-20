@@ -1,7 +1,25 @@
 body {
   font-family: $font-family-sans-serif;
   color: theme-color("bleu-fif") !important;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  overflow-x: hidden;
 
+  @include media-breakpoint-up(lg) {
+    font-size: 1.25rem;
+  }
+}
+
+html {
+  background-color: white;
+}
+
+main {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  padding-top: 2rem;
 
 }
 
@@ -9,11 +27,32 @@ body {
   font-family: 'vtf_misterpixelregular';
 }
 
-html {}
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
 
-main {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
+.wrapper-img {
+  width: 100%;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+@mixin texture-pointilles-simple {
+  background-color: transparent;
+  background-image: radial-gradient(black .5px, transparent .5px), radial-gradient(black .5px, transparent .5px);
+  background-size: calc(20 * .25px) calc(20 * .25px);
+  background-position: 0 0, calc(10 * .25px) calc(10 * .25px);
+  transform: rotate(-2.5deg);
+  display: block;
+  color: white;
+
+  &>* {
+    transform: rotate(2.5deg);
+  }
 
 }
