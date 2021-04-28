@@ -220,7 +220,7 @@ class Ressource extends Controller
     }
 
 
-    /** TO GET THE RESSOURCES BY LOCALITES AND CLASSIFIED BY TYPES */
+    /** TO GET THE RESSOURCES BY THEMES AND CLASSIFIED BY TYPES */
     public static function getByThemeGenClassedByTypes($themeGen)
     {
 

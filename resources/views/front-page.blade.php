@@ -10,40 +10,43 @@
   </div>
     
   <div class="cta ca-gratte">
-    <div class="row bloc-content">
+    <div class="row bloc-content align-items-center">
       <div class="col-md-6">
-        <img src="@asset('images/flash-info-fouffes-logo.png')" alt="">
+        <img src="@asset('images/gratte-homepage.png')" alt="">
       </div>
       <div class="col-md-6">
-        <h2>Ça me gratte !</h2>
-        <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-        <div class="btn-fif"><a href="#" role="button">Learn more</a></div>
+        @php $cta = FrontPage::getCTA(17); @endphp
+        <h2>{{ $cta->title }}</h2>
+        {{-- <p>{{ $cta->excerpt }}</p> --}}
+        <div class="btn-fif"><a href="{{ $cta->url }}" role="button">En savoir plus</a></div>
       </div>
   </div>
   </div>
 
   <div class="cta chat-perche">
-    <div class="row bloc-content flex-row-reverse">
+    <div class="row bloc-content flex-row-reverse align-items-center">
       <div class="col-md-6">
-        <img src="@asset('images/flash-info-fouffes-logo.png')" alt="">
+        <img src="@asset('images/perche-homepage.png')" alt="">
       </div>
       <div class="col-md-6">
-        <h2>Chat perché !</h2>
-        <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-        <div class="btn-fif"><a href="#" role="button">Learn more</a></div>
+        @php $cta = FrontPage::getCTA(21); @endphp
+        <h2>{{ $cta->title }}</h2>
+        {{-- <p>{{ $cta->excerpt }}</p> --}}
+        <div class="btn-fif"><a href="{{ $cta->url }}" role="button">En savoir plus</a></div>
       </div>
   </div>
   </div>
 
   <div class="cta soin-minou">
-    <div class="row bloc-content">
+    <div class="row bloc-content align-items-center">
       <div class="col-md-6">
-        <img src="@asset('images/flash-info-fouffes-logo.png')" alt="">
+        <img src="@asset('images/soin-homepage.png')" alt="">
       </div>
       <div class="col-md-6">
-        <h2>Prends soin de ton minou !</h2>
-        <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-        <div class="btn-fif"><a href="#" role="button">Learn more</a></div>
+        @php $cta = FrontPage::getCTA(27); @endphp
+        <h2>{{ $cta->title }}</h2>
+        {{-- <p>{{ $cta->excerpt }}</p> --}}
+        <div class="btn-fif"><a href="{{ $cta->url }}" role="button">En savoir plus</a></div>
       </div>
   </div>
   </div>
