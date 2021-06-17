@@ -1,5 +1,5 @@
 
-<div class="nav" id="secondary-menu" role="navigation">
+<div class="nav" id="secondary-menu" class="photocop photocop-violet" role="navigation">
 
     @php
         global $wp_query;

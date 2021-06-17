@@ -1,4 +1,4 @@
-<section class="container-fluid liste-cpt">
+<section class="container-fluid liste-cpt photocop photocop-violet">
 
   <nav>
     <h3 class="text-center">D'autres infections sexuellement transmissibles : </h3>

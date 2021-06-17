@@ -7,7 +7,7 @@
   <label for="navcheck" aria-hidden="true" title="menu" >
     <span class="burger">
       <span class="bar">
-        <span class="visuallyhidden">Menu</span>
+        <span class="matmat">Menu</span>
       </span>
     </span>
   </label>

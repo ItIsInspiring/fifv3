@@ -66,10 +66,12 @@
 }
 
 #secondary-menu {
-  @include horizontal-links(theme-color("bleu-fif"), theme-color("vert-fif"), 1rem, 5px);
+  @include horizontal-links(theme-color("violet-fif"), theme-color("inter-fif"), 1rem, 5px);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../images/texture-photocop-noir.jpg');
+  ;
 
-  // border: 1px solid red;
-  // height: 10rem;
   .pagenav {
     color: white;
     text-align: center;
@@ -81,5 +83,5 @@
     color: white
   }
 
-  @include horizontal-links(theme-color("vert-fif"), theme-color("vert-fif"), 1rem, 5px);
+  @include horizontal-links(theme-color("rouge-fif"), theme-color("rouge-fif"), 1rem, 5px);
 }

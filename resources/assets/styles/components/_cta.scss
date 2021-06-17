@@ -25,7 +25,7 @@
   @include texture-pointilles-simple;
 
   .bloc-content {
-    background-color: theme-color($color);
+
     transform: rotate(2.5deg);
     margin-bottom: 1.5rem;
     padding: 1.5rem;
@@ -51,4 +51,30 @@
 
 .soin-minou {
   @include texture-pointilles("vert-fif");
+}
+
+
+.photocop {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.photocop-rouge {
+  // @include texture-pointilles("rouge-fif");
+  background-image: url('../images/texture-photocop-rouge.jpg');
+}
+
+.photocop-inter {
+  // @include texture-pointilles("inter-fif");
+  background-image: url('../images/texture-photocop-inter.jpg');
+}
+
+.photocop-violet {
+  // @include texture-pointilles("violet-fif");
+  background-image: url('../images/texture-photocop-violet.jpg');
+}
+
+.photocop-noir {
+  // @include texture-pointilles("violet-fif");
+  background-image: url('../images/texture-photocop-noir.jpg');
 }

@@ -5,11 +5,11 @@
 
   <div class="intro">
       <img src="@asset('images/flash-info-fouffes-logo.png')" alt="">
-      <h1>{{ get_bloginfo('name', 'display') }}</h1>
-      <p>{{ get_bloginfo('description', 'display') }}</p>
+      <h1 class="titre">{{ get_bloginfo('name', 'display') }}</h1>
+      <h2 class="sstitre">{{ get_bloginfo('description', 'display') }}</h2>
   </div>
     
-  <div class="cta ca-gratte">
+  <div class="cta ca-gratte photocop photocop-rouge" >
     <div class="row bloc-content align-items-center">
       <div class="col-md-6">
         <img src="@asset('images/gratte-homepage.png')" alt="">
@@ -23,7 +23,7 @@
   </div>
   </div>
 
-  <div class="cta chat-perche">
+  <div class="cta chat-perche photocop photocop-inter">
     <div class="row bloc-content flex-row-reverse align-items-center">
       <div class="col-md-6">
         <img src="@asset('images/perche-homepage.png')" alt="">
@@ -37,7 +37,7 @@
   </div>
   </div>
 
-  <div class="cta soin-minou">
+  <div class="cta soin-minou photocop photocop-violet">
     <div class="row bloc-content align-items-center">
       <div class="col-md-6">
         <img src="@asset('images/soin-homepage.png')" alt="">
