@@ -41,9 +41,9 @@ class App extends Controller
      */
     public static function img()
     {
-        $img = get_the_post_thumbnail_url();
+        $img_url = get_the_post_thumbnail_url();
 
-        if(isset($img_url)){
+        if(!empty($img_url)){
             return "<img src='".$img_url."' alt='' >";
         } else {
             return "<img src='".get_template_directory_uri()."/assets/images/default.gif' alt='' >";
