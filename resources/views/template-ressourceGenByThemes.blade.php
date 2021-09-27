@@ -56,7 +56,7 @@
                 </p>
               </div>
           
-              <div id="{{$theme->slug}}-{{$type['type_slug']}}" class="collapse @if($loop->first) show @endif" aria-labelledby="heading-{{$theme->slug}}-{{$type['type_slug']}}" data-parent="#accordion-{{$theme->slug}}">
+              <div id="{{$theme->slug}}-{{$type['type_slug']}}" class="collapse" aria-labelledby="heading-{{$theme->slug}}-{{$type['type_slug']}}" data-parent="#accordion-{{$theme->slug}}">
                 <div class="card-body">
                   <div class="row card-body-ressource">
                     @each('partials.content-ressource', $type['ressources'] , 'ressource')                  
