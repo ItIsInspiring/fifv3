@@ -87,6 +87,15 @@ add_action('widgets_init', function () {
         'id'            => 'sidebar-primary'
     ] + $config);
     register_sidebar([
+        'name'          => __('Prefooter', 'sage'),
+        'id'            => 'sidebar-prefooter',
+        'description'   => __( 'Add widgets for your blog here.', 'carbon' ),
+        'before_widget' => '<section id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</section>',
+        'before_title'  => '<h2 class="widget-title h5">',
+        'after_title'   => '</h2>',
+    ] + $config);
+    register_sidebar([
         'name'          => __('Footer', 'sage'),
         'id'            => 'sidebar-footer'
     ] + $config);
@@ -128,5 +137,5 @@ add_action('after_setup_theme', function () {
      */
     sage('blade')->compiler()->directive('asset', function ($asset) {
         return "<?= " . __NAMESPACE__ . "\\asset_path({$asset}); ?>";
-    });
+});
 });

@@ -98,3 +98,7 @@ add_filter('get_search_form', function () {
     echo template('partials.searchform');
     return $form;
   });
+
+add_filter('sage/display_sidebar', function () {
+        return true;
+});
