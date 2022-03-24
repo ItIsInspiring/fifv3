@@ -91,18 +91,17 @@ Container::getInstance()
         ]);
     }, true);
 
-        function wpb_last_updated_date( $content ) {
-        $u_time = get_the_time('U'); 
-        $u_modified_time = get_the_modified_time('U'); 
-        if ($u_modified_time >= $u_time + 86400) { 
+function wpb_last_updated_date( $content ) {
+    $u_time = get_the_time('U'); 
+    $u_modified_time = get_the_modified_time('U'); 
+    $custom_content = "";
+    if ($u_modified_time >= $u_time + 86400) { 
         $updated_date = get_the_modified_time('j F Y');
         $updated_time = get_the_modified_time('h:i a'); 
-        $custom_content = "";
-        $custom_content .= '<time class="updated" class="last-updated">Derniere mis-a-jour le '. $updated_date . '</time>';  
-        // $custom_content .= '<p class="last-updated">Derniere mis-a-jour le '. $updated_date . ' at '. $updated_time .'</p>';  
-        } 
+    $custom_content .= '<time class="updated">Mise-à-jour le '. $updated_date . '</time>';  
+    } 
         
-            $custom_content .= $content;
-            return $custom_content;
-        }
-        add_filter( 'the_content', 'wpb_last_updated_date' );
+        $custom_content .= $content;
+        return $custom_content;
+    }
+    add_filter( 'the_content', 'wpb_last_updated_date' );

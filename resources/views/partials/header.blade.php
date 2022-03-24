@@ -26,7 +26,7 @@
 
 </nav>
 </div>
-@if(!is_front_page())
+@if(!is_front_page() && !is_home())
 <header class="page-img">
   {!! App::img() !!}
 </header>

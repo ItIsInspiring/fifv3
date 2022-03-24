@@ -13497,4 +13497,8 @@ var _iconsCache = {
 /* 17 */
 /***/ (function(module, exports) {
 
-throw new Error("Module build failed: ModuleBuildError: Module build failed: Error: Missing bindi
+// removed by extract-text-webpack-plugin
+
+/***/ })
+/******/ ]);
+//# sourceMappingURL=main.js.map
