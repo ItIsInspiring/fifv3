@@ -44,7 +44,7 @@ class Home extends Controller
      * @param [int] $exclude
      * @return void
      */ 
-    public static function getSomeArticles($nbArticles, $exclude = null) 
+    public static function getSomeArticles($nbArticles, $exclude) 
     {
         
         if($exclude == null){

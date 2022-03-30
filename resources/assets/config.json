@@ -10,7 +10,7 @@
   },
   "publicPath": "/wp-content/themes/fifV3/",
   "devUrl": "http://flash-info-fouffes.test",
-  "proxyUrl": "http://localhost:3000",
+  "proxyUrl": "http://flash-info-fouffes.test/",
   "cacheBusting": "[name]_[hash:8]",
   "watch": [
     "app/**/*.php",

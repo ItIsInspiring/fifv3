@@ -17,3 +17,19 @@
   }
 
 }
+
+@mixin btn-ghost ($color, $size) {
+  background-color: transparent;
+  background-image: radial-gradient(color .5px, transparent .5px), radial-gradient(color .5px, transparent .5px);
+  transform: rotate(-2.5deg);
+  color: $color;
+  border: 2px solid $color;
+  padding: 0.35rem 0.75rem 0.5rem;
+  font-size: $size;
+  line-height: $size*2;
+
+  &.hover {
+    background-color: $color;
+    color: white;
+  }
+}

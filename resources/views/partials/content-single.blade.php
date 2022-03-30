@@ -12,3 +12,4 @@
     </footer>
   </article>
 </div>
+@include('partials.blog.entry-author-info')
